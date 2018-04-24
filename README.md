@@ -63,6 +63,11 @@ Build command:     hugo -s .
 Publish directory: public
 ```
 
+Set a deployment environment variable
+```
+HUGO_VERSION: 0.40
+```
+
 ## 4. Add CNAME DNS record
 
 Change Site Name
@@ -118,7 +123,6 @@ git add -A
 git commit -m "Added first post"
 git push
 ```
-
 
 
 
