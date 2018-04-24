@@ -95,22 +95,32 @@ https://www.gagne.tech/
 
 ```powershell
 cd C:\dartbox\Code\www-gagne-tech
-hugo new site quickstart
 
-git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
 
 # Edit your config.toml configuration file
-# and add the Ananke theme.
+# and add the Ananke theme and update the URL
+np config.toml
 
-# Bad characters via PowerShell
-echo 'theme = "ananke"' >> config.toml
-
-
+# Create a post
 hugo new posts/my-first-post.md
+
+# Update the post
+np content/posts/my-first-post.md
 
 hugo server -D
 ```
+
+Browse to http://localhost:1313/
+
+```powershell
+git add -A
+git commit -m "Added first post"
+git push
+```
+
+
+
 
 
 
