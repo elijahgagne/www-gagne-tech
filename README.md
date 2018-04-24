@@ -123,9 +123,3 @@ git add -A
 git commit -m "Added first post"
 git push
 ```
-
-
-
-
-
-
